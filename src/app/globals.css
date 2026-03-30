@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #232829;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+
+
+}
+
+@theme {
+  --breakpoint-xxs: 15rem;/* 240px */
+  --breakpoint-small: 320px;
+  --breakpoint-mob: 375px;
+  --breakpoint-xs: 30rem; /* 490px */
+  --breakpoint-large: 72rem; /* 1152px */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    box-sizing: content-box;
+    --background: #232829;
+  }
+}
+
+
+
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes smooth-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-smooth-blink {
+  animation: smooth-blink 1s ease-in-out infinite;
+}
