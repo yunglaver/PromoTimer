@@ -15,8 +15,8 @@
 
 @theme {
   --breakpoint-xxs: 15rem;/* 240px */
-  --breakpoint-small: 320px;
-  --breakpoint-mob: 375px;
+  --breakpoint-small: 20rem /*320px*/;
+  --breakpoint-mob: 24rem /* 376px */; /* 384px */
   --breakpoint-xs: 30rem; /* 490px */
   --breakpoint-large: 72rem; /* 1152px */
 }

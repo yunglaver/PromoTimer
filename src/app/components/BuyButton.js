@@ -6,6 +6,10 @@ export default function BuyButton () {
     return (
         <div>
             <button className="
+                xxs:
+
+
+
                 xxs:mt-4
                 xs:mt-5
                 sm:mt-4

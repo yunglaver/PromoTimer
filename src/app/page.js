@@ -6,6 +6,8 @@ import Checkbox from "@/app/components/Checkbox";
 import BuyButton from "@/app/components/BuyButton";
 import {getOffers} from "@/app/core/api";
 
+
+
 export default async function Home() {
 
     const offersData = await getOffers()
