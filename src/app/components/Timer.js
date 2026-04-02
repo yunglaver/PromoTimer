@@ -10,7 +10,7 @@ const ralewayBold = localFont({
 });
 
 
-export const Timer = () => {
+export const Timer = ({onTimeout}) => {
 
     const [time, setTime] = useState(120);
 
@@ -22,6 +22,7 @@ export const Timer = () => {
             setTime((prev) => {
                 if (prev <= 1) {
                     clearInterval(interval);
+                    onTimeout?.();
                     return 0;
                 }
                 return prev - 1;
@@ -36,6 +37,7 @@ export const Timer = () => {
     const seconds = time % 60;
 
     const isWarning = time < 30 && time > 0;
+
 
     const textColor = isWarning
         ? "text-[#FF4E4E] animate-smooth-blink"

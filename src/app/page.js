@@ -2,9 +2,11 @@ import { Timer } from "./components/Timer.js"
 import man from "@/app/assets/images/man.png";
 import alert from "@/app/assets/icons/Alert.svg";
 import OfferCard from "@/app/components/OfferCard";
-import Checkbox from "@/app/components/Checkbox";
-import BuyButton from "@/app/components/BuyButton";
+
 import {getOffers} from "@/app/core/api";
+import ClientPart from "@/app/ClientPart"
+
+
 
 
 
@@ -13,7 +15,6 @@ export default async function Home() {
     const offersData = await getOffers()
     const theBestOffer = offersData.find(o => o.is_best)
     const otherOffers = offersData.filter(o => !o.is_best)
-
 
     return (
         <div className="flex flex-col flex-1 font-sans ">
@@ -162,11 +163,7 @@ export default async function Home() {
                                 <div>
 
                                 </div>
-                                <Checkbox/>
-                                <BuyButton
-                                    btnWidth={""}
-                                    btnHeight={""}
-                                />
+                                <ClientPart />
                                 <span className="
                                     text-[#9B9B9B]
                                     xxs:text-[10px]
@@ -240,6 +237,7 @@ export default async function Home() {
                 </div>
             </main>
         </div>
+
     );
 
 }
