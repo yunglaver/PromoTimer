@@ -11,10 +11,11 @@
       <change afterPath="$PROJECT_DIR$/src/app/assets/icons/arrow.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/assets/icons/arrow.webp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/app/assets/icons/pngtree-red-arrow-sign-clipart-png-image_6520593.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Arrow.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Arrow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Arrow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/BuyButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/BuyButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Checkbox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/OfferCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/OfferCard.js" afterDir="false" />
@@ -33,7 +34,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "npm.dev (1).executor": "Run"
   }
 }]]></component>
   <component name="TaskManager">
