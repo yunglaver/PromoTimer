@@ -1,7 +1,7 @@
 export default function BuyButton ({ onClick }) {
 
 
-
+    let offerChoice = null
 
     return (
         <div>

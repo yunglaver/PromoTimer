@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import Checkbox from "@/app/components/Checkbox";
 import BuyButton from "@/app/components/BuyButton";
-export default function ClientPart() {
+import { useRouter } from 'next/navigation'
+export default function ClientPart({ selectedOffer }) {
     const [isChecked, setIsChecked] = useState(false);
     const [error, setError] = useState(false);
+    const router = useRouter()
 
     return (
         <>
@@ -20,12 +22,14 @@ export default function ClientPart() {
             <BuyButton onClick={() => {
                 if (!isChecked) {
                     setError(true);
-
                     setTimeout(() => {
                         setError(false);
-                    }, 1000); // 1 секунда
+                    }, 1000);
+                } else if (!selectedOffer) {
+                    alert('Выбери тариф')
                 } else {
-                    console.log('покупка');
+                    localStorage.setItem('offer', JSON.stringify(selectedOffer))
+                    router.push('/success')
                 }
             }} />
         </>

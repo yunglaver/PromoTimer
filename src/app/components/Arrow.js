@@ -1,4 +1,4 @@
-import arrow from "@/app/assets/icons/arrow.svg";
+import arrow from "@/app/assets/icons/Arrow.svg";
 
 export default function Arrow ({  onChange, error  }) {
     return (

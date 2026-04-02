@@ -5,6 +5,16 @@ const GilroyFont = localFont({
     src: '../assets/fonts/Gilroy-Medium.ttf',
 });
 
+/*
+    Данные с сервера не валидны.
+    id не уникальны, и в макете text
+    в мобильной версии отличается от desktop,
+    хотя в передаваемом json текст только
+    для json. Так что придется захардкодить
+    текст для мобильной версии, предположим
+    что с сервера так же приходит ключ-значение
+    "short_text".
+*/
 
 const shortTexts = {
     "1 неделя": "Чтобы просто начать",
@@ -15,13 +25,18 @@ const shortTexts = {
 
 
 
-export default function OfferCard ({ data }) {
+export default function OfferCard ({ data, id, onSelect, isSelected }) {
 
     const discount = Math.trunc(((data.full_price - data.price)/data.full_price) * 100)
 
     return (
-        <div className={`
+        <button
+            id={id}
+            onClick={() => onSelect?.(data)}
+            type="button"
+            className={`
             w-full
+            cursor-pointer
             bg-[#313637]
             ${data.is_best ? "lg:max-w-[746px] lg:h-[188px]" : "lg:max-w-[240px] lg:h-[335px]"} 
             xxs:mb-[6px]
@@ -31,8 +46,8 @@ export default function OfferCard ({ data }) {
             lg:mb-3.5
             rounded-[25px/35px]
             border-2 
-            border-[#484D4E]
             hover:border-[#FDB056]
+            ${isSelected ? "border-[#FDB056]" : "border-[#484D4E]"}
             transition-all duration-200         
         `}>
             <div className="relative flex flex-col items-center">
@@ -188,6 +203,6 @@ export default function OfferCard ({ data }) {
                 </div>
             </div>
         </div>
-    </div>
+    </button>
 )}
 
