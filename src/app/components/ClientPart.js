@@ -4,7 +4,8 @@ import { useState } from 'react';
 import Checkbox from "@/app/components/Checkbox";
 import BuyButton from "@/app/components/BuyButton";
 import { useRouter } from 'next/navigation'
-export default function ClientPart({ selectedOffer }) {
+
+export default function ClientPart({ selectedOffer, isExpired }) {
     const [isChecked, setIsChecked] = useState(false);
     const [error, setError] = useState(false);
     const router = useRouter()
@@ -28,7 +29,16 @@ export default function ClientPart({ selectedOffer }) {
                 } else if (!selectedOffer) {
                     alert('Выбери тариф')
                 } else {
-                    localStorage.setItem('offer', JSON.stringify(selectedOffer))
+
+                    const finalOffer = {
+                        ...selectedOffer,
+                        actualPrice: isExpired
+                            ? selectedOffer.full_price
+                            : selectedOffer.price
+                    }
+                    console.log('FINAL:', finalOffer)
+                    localStorage.setItem('finalOffer', JSON.stringify(finalOffer))
+                    console.log('from loc st:', localStorage.getItem("finalOffer"))
                     router.push('/success')
                 }
             }} />

@@ -1,4 +1,4 @@
-import {getOffers} from "@/app/core/api";
+import {getOffers} from "@/app/services/api";
 import ClientPage from "@/app/components/ClientPage";
 
 

@@ -12,7 +12,7 @@ const ralewayBold = localFont({
 
 export const Timer = ({onTimeout}) => {
 
-    const [time, setTime] = useState(120);
+    const [time, setTime] = useState(5);
 
 
 

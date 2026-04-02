@@ -16,22 +16,30 @@ export default function ClientPage({ offers }) {
         setIsExpired(true)
     }
 
+
+
+
+
     return (
         <>
-            <div className="flex flex-col flex-1 font-sans ">
-                <nav className="
-                flex
-                w-full
+            <div className="flex
                 flex-col
-                justify-center
-                content-center
-                items-center
-                justify-between
-                h-[87px]
-                mx-auto
-                bg-[#1D5B43]
+                flex-1
+                font-sans
             ">
-                    <div className="flex flex-col items-center">
+                <nav className="
+                    flex
+                    w-full
+                    flex-col
+                    justify-center
+                    content-center
+                    items-center
+                    justify-between
+                    h-[87px]
+                    mx-auto
+                    bg-[#1D5B43]
+                ">
+                <div className="flex flex-col items-center">
                     <span className="
                         font-semibold
                         xxs:text-[14px]
@@ -42,8 +50,8 @@ export default function ClientPage({ offers }) {
                     ">
                         Успейте открыть пробную неделю
                     </span>
-                        <Timer onTimeout={() => setTimeout(handleTimeout, 0)} />
-                    </div>
+                    <Timer onTimeout={() => setTimeout(handleTimeout, 0)} />
+                </div>
                 </nav>
                 <main className="flex flex-1 justify-center">
                     <div className="max-w-[1216px] flex flex-col w-full xxs:mx-4">
@@ -175,6 +183,7 @@ export default function ClientPage({ offers }) {
                                     </div>
                                     <ClientPart
                                         selectedOffer={selectedOffer}
+                                        isExpired={isExpired}
                                     />
                                     <span className="
                                     text-[#9B9B9B]
@@ -249,7 +258,6 @@ export default function ClientPage({ offers }) {
                     </div>
                 </main>
             </div>
-
         </>
     )
 }

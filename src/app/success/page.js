@@ -8,42 +8,61 @@ export default function CheckoutPage() {
     const router = useRouter()
 
     useEffect(() => {
-        const data = localStorage.getItem('offer')
-        if (data) setOffer(JSON.parse(data))
+        const data = localStorage.getItem('finalOffer')
+        if (data) {
+            setOffer(JSON.parse(data))
+        }
     }, [])
 
     return (
-        <div>
+        <div className="
+            flex flex-col items-center justify-center
+            min-h-screen
+            bg-[#232829]
+            text-white
+        ">
+            {offer ? (
+                <div className="
+                    bg-[#313637]
+                    p-6
+                    rounded-2xl
+                    border border-[#484D4E]
+                    flex flex-col items-center
+                    gap-4
+                    w-[300px]
+                ">
+                    <h2 className="text-[20px] font-bold">
+                        Ваш тариф
+                    </h2>
 
+                    <span className="text-[18px]">
+                        {offer.period}
+                    </span>
 
+                    <span className="text-[28px] font-semibold text-[#FDB056]">
+                        {offer.actualPrice} ₽
+                    </span>
 
-
-            <button
-                onClick={() => router.back()}
-                className={`
-                
-                xs:mt-4
-                xs:mt-5
-                sm:mt-4
-                xxs:max-w-[288px]
-                mob:max-w-[343px]
-                md:w-[352px]
-                xxs:h-[55px]
-                mob:h-[63px]
-                md:h-[66px]
-                w-full
-                bg-[#FDB056]
-                rounded-[20px]
-                text-[#191E1F]
-                text-[20px]
-                font-bold
-                hover:bg-[#e68a1e]
-                `}
-            >
-                Вернуться назад
-            </button>
-
-
+                    <button
+                        onClick={() => router.back()}
+                        className="
+                            mt-4
+                            w-full
+                            h-[50px]
+                            bg-[#FDB056]
+                            rounded-xl
+                            text-[#191E1F]
+                            font-bold
+                            hover:bg-[#e68a1e]
+                            transition-all
+                        "
+                    >
+                        Назад
+                    </button>
+                </div>
+            ) : (
+                <span>Загрузка...</span>
+            )}
         </div>
     )
 }
