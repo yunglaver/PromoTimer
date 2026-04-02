@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1894948d-0d87-441c-b8cb-0a971264a2ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ClientPart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/assets/fonts/Gilroy-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/assets/icons/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/assets/icons/arrow.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/assets/icons/pngtree-red-arrow-sign-clipart-png-image_6520593.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/Arrow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/BuyButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/BuyButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/OfferCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/OfferCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "main",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
