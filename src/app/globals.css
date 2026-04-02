@@ -13,10 +13,62 @@
 
 }
 
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-shake {
+  animation: shake 0.3s ease;
+}
+
+@keyframes errorFade {
+  0% {
+    border-color: #ef4444;
+  }
+  30% {
+    border-color: #ef4444;
+  }
+  100% {
+    border-color: #BDBDBD;
+  }
+}
+
+.animate-error {
+  animation: errorFade 1.5s ease-out forwards;
+}
+
+
+@keyframes errorFadeArrow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-arrow {
+  animation: errorFadeArrow 1s ease-out forwards;
+}
+
 @theme {
   --breakpoint-xxs: 15rem;/* 240px */
-  --breakpoint-small: 320px;
-  --breakpoint-mob: 375px;
+  --breakpoint-small: 20rem /*320px*/;
+  --breakpoint-mob: 24rem /* 376px */; /* 384px */
   --breakpoint-xs: 30rem; /* 490px */
   --breakpoint-large: 72rem; /* 1152px */
 }

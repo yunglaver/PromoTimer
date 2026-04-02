@@ -1,11 +1,13 @@
-export default function BuyButton () {
+export default function BuyButton ({ onClick }) {
 
 
 
 
     return (
         <div>
-            <button className="
+            <button
+                onClick={onClick}
+                className="
                 xxs:mt-4
                 xs:mt-5
                 sm:mt-4
@@ -21,6 +23,7 @@ export default function BuyButton () {
                 text-[#191E1F]
                 text-[20px]
                 font-bold
+                hover:bg-[#e68a1e]
                 ">
                     Купить
             </button>
