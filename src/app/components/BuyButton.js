@@ -7,11 +7,13 @@ export default function BuyButton ({ onClick }) {
         <div>
             <button
                 onClick={onClick}
+
                 className="
                 xxs:mt-4
                 xs:mt-5
                 sm:mt-4
                 xxs:max-w-[288px]
+                active:scale-98
                 mob:max-w-[343px]
                 md:w-[352px]
                 xxs:h-[55px]

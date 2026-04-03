@@ -39,6 +39,7 @@ export default function OfferCard ({ data, id, onSelect, isSelected, isExpired }
             onClick={() => onSelect?.(data)}
             type="button"
             className={`
+            active:scale-98
             p-0
             w-full
             cursor-pointer
