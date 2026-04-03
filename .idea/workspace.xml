@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1894948d-0d87-441c-b8cb-0a971264a2ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/BuyButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/BuyButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/OfferCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/OfferCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775158152962</updated>
       <workItem from="1775158154764" duration="2760000" />
-      <workItem from="1775161523133" duration="13098000" />
+      <workItem from="1775161523133" duration="13534000" />
     </task>
     <servers />
   </component>

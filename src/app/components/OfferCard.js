@@ -44,6 +44,7 @@ export default function OfferCard ({ data, id, onSelect, isSelected, isExpired }
             w-full
             cursor-pointer
             bg-[#313637]
+            
             ${data.is_best ? "lg:max-w-[746px] lg:h-[188px]" : "lg:max-w-[240px] lg:h-[335px]"} 
             xxs:mb-[6px]
             xs:mb-[8px]
@@ -53,7 +54,7 @@ export default function OfferCard ({ data, id, onSelect, isSelected, isExpired }
             rounded-[25px/35px]
             border-2 
             hover:border-[#FDB056]
-            ${isSelected ? "border-[#FDB056]" : "border-[#484D4E]"}
+            ${isSelected ? "bg-[#324542] border-[#484D4E]" : "border-[#484D4E]"}
             transition-all duration-200         
         `}>
             <div className={`
